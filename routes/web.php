@@ -17,3 +17,7 @@ Route::get('/', function () {
 Route::get('/admin', function(){
 	return view('Admin.index');
 });
+//Admin Route Hear
+
+Route::resource('Admin/About','Admin\AboutController');
+

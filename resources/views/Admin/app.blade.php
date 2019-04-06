@@ -17,16 +17,15 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="col-sm-6">
+	<div class="row">
+		<div class="col-sm-4">
 			@include('Admin.Admin-Layouts.slider')
 		</div>
 		<div class="col-sm-6">
 			@yield('content')
 		</div>
 	</div>
-		
-
-	
+</div>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
