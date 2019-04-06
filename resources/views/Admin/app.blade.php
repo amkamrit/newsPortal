@@ -15,9 +15,18 @@
 			@include('Admin.Admin-Layouts.head')
 			</div>
 		</div>
-		@yield('content')
-
 	</div>
+	<div class="container">
+		<div class="col-sm-6">
+			@include('Admin.Admin-Layouts.slider')
+		</div>
+		<div class="col-sm-6">
+			@yield('content')
+		</div>
+	</div>
+		
+
+	
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
