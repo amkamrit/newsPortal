@@ -71,3 +71,12 @@ body{
 	padding-top: 30px;
 	padding-left: 50px;
 }
+.createStyle{
+	padding-top: 30px;
+	padding-left: 60px;
+}
+.createStyle h1{
+	color: red;
+	font-size: 25px;
+	padding: 30px;
+}
