@@ -15,6 +15,8 @@ class CreateProjectListTable extends Migration
     {
         Schema::create('project_list', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('category');
+            $table->string('subcategory');
             $table->string('projectTitle');
             $table->string('description');
             $table->string('coverImage');
