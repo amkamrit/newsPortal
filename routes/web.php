@@ -20,4 +20,5 @@ Route::get('/admin', function(){
 //Admin Route Hear
 
 Route::resource('Admin/About','Admin\AboutController');
+Route::resource('Admin/ProjectList','Admin\ProjectListController');
 

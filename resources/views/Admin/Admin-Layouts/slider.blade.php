@@ -11,7 +11,7 @@
 
 						</tr>
 						<tr>
-							<td><a href=""> Project List</a></td>
+							<td><a href="{{url('Admin/ProjectList')}}"> Project List</a></td>
 
 						</tr>
 												<tr>
