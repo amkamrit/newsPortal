@@ -18,8 +18,7 @@
 				<td>{{$ProjectLists->id}}</td>
 				<td>{{$ProjectLists->projectTitle}}</td>
 				<td><a href="{{route('ProjectList.show',$ProjectLists->id )}}" class="btn btn-outline-info btn-sm" style="margin-right: 20px;">View</a>
-					<button class="btn btn-outline-success btn-sm" style="margin-right: 20px;">Edit</button>
-					<button class="btn btn-outline-danger btn-sm">Delete</button>
+					<a href="{{route('ProjectList.edit',$ProjectLists->id )}}" class="btn btn-outline-success btn-sm" style="margin-right: 20px;">Edit</a>
 				</td>
 			</tr>
 			@endforeach

@@ -21,4 +21,5 @@ Route::get('/admin', function(){
 
 Route::resource('Admin/About','Admin\AboutController');
 Route::resource('Admin/ProjectList','Admin\ProjectListController');
-
+Route::resource('Admin/Services','Admin\ServicesController');
+Route::resource('Admin/SocialMedia','Admin\ScialMediaController');

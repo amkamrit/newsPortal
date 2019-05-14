@@ -15,12 +15,12 @@
 
 						</tr>
 												<tr>
-							<td><a href=""> My Services</a></td>
+							<td><a href="{{url('Admin/Services')}}"> My Services</a></td>
 
 						</tr>
 						</tr>
 												<tr>
-							<td><a href=""> Social Media</a></td>
+							<td><a href="{{url('Admin/SocialMedia')}}"> Social Media</a></td>
 
 						</tr>
 						</tr>

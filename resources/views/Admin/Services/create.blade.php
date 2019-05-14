@@ -5,33 +5,30 @@
 <div class="createStyle">
 	<div class="row">
 		<div class="col-sm-12">
-			<h1>EDIT PROJECT </h1>
+			<h1>CREATE SERVICE </h1>
 		</div>
 	</div>
 
-<form class="form" action="{{route('ProjectList.update', [$project->id])}} " method="POST" enctype="multipart/form-data">
-	   <input type="hidden" name="_method" value="PUT">
-	  {{ csrf_field() }}
+<form class="form" action="{{route('Services.store')}} " method="POST" enctype="multipart/form-data">
+	  @csrf
 
 	<div class="row">
 		<div class="col-sm-12">
 		<div class="form-group">
-			<label class="control-label">Project Title</label>
-			<input type="text" name="projectTitle" class="form-control" value="{{$project->projectTitle}}" required>
+			<label class="control-label">Service Title</label>
+			<input type="text" name="title" class="form-control" required>
 		<div class="help-block"></div>
 				<div class="form-group">
 			<label class="control-label">Category</label>
-			<input type="text" name="category" class="form-control" value="{{$project->category}}" required>
+			<input type="text" name="category" class="form-control" required>
 		<div class="help-block"></div>
 				<div class="form-group">
 			<label class="control-label">Sub Catrgory</label>
-			<input type="text" name="subcategory" class="form-control" value="{{$project->subcategory}}" required>
+			<input type="text" name="subcategory" class="form-control" required>
 		<div class="help-block"></div>
 		<div class="form-group">
 			<spam>Description</spam>
-			<textarea name="description" class="form-control" id="description" required>
-				{{$project->description}}
-			</textarea>
+			<textarea name="description" class="form-control" id="description" required></textarea>
 		<div class="help-block"></div>
 	</div>
 </div>
@@ -39,17 +36,14 @@
 		<div class="col-sm-12">
 			<div class="form-group">
 			<label class="control-label">Cover Image</label>
-			<?php $url=url('image/'.$project->coverImage); 
-                                ?>
-			<input type="file" name="coverImage" class="form-control" value="{{$project->coverImage}}" >
-			<img src="{{$url}}" height="100px" width="100px">
+			<input type="file" name="photo" class="form-control" required>
 		<div class="help-block"></div>
 		</div>
 	</div>
 			<div class="col-sm-12">
 			<div class="form-group">
 			<label class="control-label">File</label>
-			<input type="file" name="file" class="form-control" value="{{$project->file}}">
+			<input type="file" name="file" class="form-control" required>
 		<div class="help-block"></div>
 		</div>
 	</div>

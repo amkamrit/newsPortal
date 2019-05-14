@@ -60,4 +60,47 @@ class ProjectListController extends Controller
 
     	return view('Admin.ProjectList.edit')->with('project', $projects);
     }
+    public function update(Request $request, $id){
+
+    	$updateData=ProjectList::find($id);
+
+    	$updateData->category=$request->input('category');
+    	$updateData->subcategory=$request->input('subcategory');
+    	$updateData->projectTitle=$request->input('projectTitle');
+    	$updateData->description=$request->input('description');
+
+
+    		if ($request->hasFile('coverImage')) {
+
+            $file=$request->file('coverImage');
+            $file_name=time().'.'. $file->getClientOriginalExtension();
+            $location=('image/' .$file_name);
+            Image::make($file)->resize(1500, 1500)->save($location);
+            $updateData->coverImage=$file_name;
+        }
+
+    		if ($request->hasFile('file')) {
+
+            $file=$request->file('file');
+            $file_name=time().'.'. $file->getClientOriginalExtension();
+            $location=('image/' .$file_name);
+            $file->move($location, $file_name);
+            $updateData->file=$file_name;
+        }
+
+        $updateData->save();
+         $ProjectLists=ProjectList::all();
+
+       return view('Admin.ProjectList.index')->with('ProjectList',$ProjectLists);
+    }
+    public function destroy($id)
+    {
+        $project = ProjectList::find($id);
+
+        $project->delete();
+
+       $ProjectLists=ProjectList::all();
+
+       return view('Admin.ProjectList.index')->with('ProjectList',$ProjectLists);
+    }
 }
