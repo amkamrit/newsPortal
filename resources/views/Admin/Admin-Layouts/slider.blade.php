@@ -25,7 +25,7 @@
 						</tr>
 						</tr>
 												<tr>
-							<td><a href=""> Contact</a></td>
+							<td><a href="{{url('Admin/Contact')}}"> Contact</a></td>
 
 						</tr>
 												</tr>
