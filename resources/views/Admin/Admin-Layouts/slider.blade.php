@@ -14,25 +14,27 @@
 							<td><a href="{{url('Admin/ProjectList')}}"> Project List</a></td>
 
 						</tr>
-												<tr>
+						<tr>
 							<td><a href="{{url('Admin/Services')}}"> My Services</a></td>
 
 						</tr>
-						</tr>
-												<tr>
+						<tr>
 							<td><a href="{{url('Admin/SocialMedia')}}"> Social Media</a></td>
 
 						</tr>
-						</tr>
-												<tr>
+						<tr>
 							<td><a href="{{url('Admin/Contact')}}"> Contact</a></td>
 
 						</tr>
-												</tr>
-												<tr>
-							<td><a href=""> Gallary</a></td>
+						<tr>
+							<td><a href="{{url('Admin/Gallary')}}"> Gallary</a></td>
 
 						</tr>
+						<tr>
+							<td><a href="{{url('Admin/MyCline')}}"> My Cline</a></td>
+
+						</tr>
+
 					</tbody>
 				</table>
 		</div>

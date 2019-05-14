@@ -24,5 +24,6 @@ Route::resource('Admin/ProjectList','Admin\ProjectListController');
 Route::resource('Admin/Services','Admin\ServicesController');
 Route::resource('Admin/SocialMedia','Admin\ScialMediaController');
 Route::resource('Admin/Contact','Admin\ContactController');
-
+Route::resource('Admin/Gallary','Admin\GallaryController');
+Route::resource('Admin/MyCline','Admin\ContactUserController');
  
