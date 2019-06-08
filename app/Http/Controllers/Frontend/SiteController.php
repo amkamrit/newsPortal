@@ -15,6 +15,18 @@ class SiteController extends Controller
 {
     public function aboutIndex()
     {
-    	return view('index');
+    	$abouts=About::all();
+    	$contacts=Contact::all();
+    	$gallarys=Gallary::all();
+    	$projectLists=ProjectList::all();
+    	$services=ProjectList::all();
+    	$Socialmedias=Socialmedia::all();
+    	return view('index')
+    	->with('about', $abouts)
+    	->with('contact', $contacts)
+    	->with('gallary', $gallarys)
+    	->with('projectList', $projectLists)
+    	->with('service', $services)
+    	->with('Socialmedia', $Socialmedias);
     }
 }

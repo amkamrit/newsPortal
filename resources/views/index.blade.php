@@ -8,7 +8,9 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-md">
                     <div class="wellcome-heading">
-                        <h2>AMRIT KAFLE</h2>
+                        @foreach($about as $abouts)
+                        <h2>{{$abouts->name}}</h2>
+                        @endforeach
                         <p>MID-SENIOR Level PHP Developer</p>
                     </div>
                     <div class="get-start-area">
@@ -159,14 +161,11 @@
                     <div class="col-lg-6 col-xl-5 ml-xl-auto">
                         <div class="special_description_content">
                             <h2>About Us!</h2>
-                            <p>My name is Amrit Kafle, and I am a  MID-SENIOR Level PHP Developer (Backend) / PHP Web Developer from Kathmandu.
-                            For the past 3 years, I've been developing applications for the web using Core PHP, Laravel and YII2.
-
-                            Over 3+ years commercial experience, ranging from medium to large and complex systems, and have worked with E-commerce, News Portal, Travel and Hotel Website , Account system and Informatic Website etc.
-                             </p>
-                             <p>
-                                 I am a talented and versatile senior developer who specialises in custom web development, focusing on custom module development for php, a secure platform that is user-friendly, flexible and allows for complete customisation. I have skills as a PHP Developer and have extensive experience with custom coding and with different PHP frameworks.
-                             </p>
+                            <p>
+                                @foreach($about as $abouts)
+                                {!!$abouts->description!!}
+                                @endforeach
+                            </p>
                             <div class="app-download-area">
                                 <div class="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
                                     <!-- Google Store Btn -->
@@ -210,12 +209,20 @@
                     <div class="single-feature">
                         <i class="ti-shopping-cart" aria-hidden="true"></i>
                         <h5>E-commerse</h5>
+                        @foreach($projectList as $projectLists )
+                        @if($projectLists->category==1)
                         <p>
-                        Visit My Previous Works<br>
-                        URL :- https://ommantracrafts.com/<br>
-                        URL :- https://nish.com/<br>
-                        URL :- https://ecommerse.amritkafle.com.np/
+                        <?php
+                        
+                        $url=url('image/'.$projectLists->coverImage);
+
+                        ?>
+                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 200px; height: 200px"><br>
+                            <a href="#contact" class="btn btn-primary" style="margin-left: 30px;">Order Now</a>
+                        
                     </p>
+                    @endif
+                    @endforeach
                     </div>
                 </div>
                 <!-- Single Feature Start -->
@@ -223,18 +230,43 @@
                     <div class="single-feature">
                         <i class="ti-align-justify" aria-hidden="true"></i>
                         <h5>News Portal</h5>
+                         @foreach($projectList as $projectLists )
+                        @if($projectLists->category==2)
                         <p>
-                            Visit My Previous Works<br>
+                             <?php
+                        
+                        $url=url('image/'.$projectLists->coverImage);
+
+                        ?>
+                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 200px; height: 200px"><br>
+                        <a href="#contact" class="btn btn-primary" style="margin-left: 30px;">Order Now</a>
+                        
                         </p>
+                        @endif
+                         @endforeach
                     </div>
                 </div>
+
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
                         <i class="ti-car" aria-hidden="true"></i>
                         <h5>Travel and Hotel</h5>
                         <p>
-                            Visit My Previous Works<br>
+                        @foreach($projectList as $projectLists )
+                        @if($projectLists->category==3)
+                        <p>
+                             <?php
+                        
+                        $url=url('image/'.$projectLists->coverImage);
+
+                        ?>
+                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 250px; height: 200px"><br>
+                        <a href="#contact" class="btn btn-primary" style="margin-left: 30px;">Order Now</a>
+                        
+                        </p>
+                        @endif
+                         @endforeach
                         </p>
                     </div>
                 </div>
@@ -242,10 +274,21 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
                         <i class="ti-home" aria-hidden="true"></i>
-                        <h5>Cafe</h5>
+                        <h5>Resturant and Cafe</h5>
+                        @foreach($projectList as $projectLists )
+                        @if($projectLists->category==4)
                         <p>
-                            Visit My Previous Works<br>
+                             <?php
+                        
+                        $url=url('image/'.$projectLists->coverImage);
+
+                        ?>
+                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 200px; height: 200px"><br>
+                        <a href="#contact" class="btn btn-primary" style="margin-left: 30px;">Order Now</a>
+                        
                         </p>
+                        @endif
+                         @endforeach
                     </div>
                 </div>
                 <!-- Single Feature Start -->
@@ -254,7 +297,20 @@
                         <i class="ti-up" aria-hidden="true"></i>
                         <h5>Other Website</h5>
                         <p>
-                            Visit My Previous Works<br>
+                        @foreach($projectList as $projectLists )
+                        @if($projectLists->category==5)
+                        <p>
+                             <?php
+                        
+                        $url=url('image/'.$projectLists->coverImage);
+
+                        ?>
+                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 250px; height: 200px"><br>
+                        <a href="#contact" class="btn btn-primary" style="margin-left: 30px;">Order Now</a>
+                        
+                        </p>
+                        @endif
+                         @endforeach
                         </p>
                     </div>
                 </div>
@@ -263,7 +319,21 @@
                     <div class="single-feature">
                         <i class="ti-headphone" aria-hidden="true"></i>
                         <h5>24/7 Online Support</h5>
-                        <p>You can reach our team at any time, day or night.</p>
+                        <p>
+                        @foreach($projectList as $projectLists )
+                        @if($projectLists->category==6)
+                        <p>
+                             <?php
+                        
+                        $url=url('image/'.$projectLists->coverImage);
+
+                        ?>
+                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 250px; height: 200px">
+                        
+                        </p>
+                        @endif
+                         @endforeach
+                        </p>
                     </div>
                 </div>
             </div>

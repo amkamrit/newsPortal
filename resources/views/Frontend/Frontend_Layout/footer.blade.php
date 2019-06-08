@@ -30,6 +30,7 @@
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div class="row">
+                                    <h2 style="color: black" >Order Now</h2>
                                     <!-- Single Input Area Start -->
                                     <div class="col-md-12">
                                         <div class="form-group">
