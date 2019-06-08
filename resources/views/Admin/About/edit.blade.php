@@ -30,7 +30,7 @@
 			<label class="control-label">Photo</label>
 			<?php $url=url('image/'.$about->photo); 
                                 ?>
-			<input type="file" name="photo" class="form-control" value="{{$about->photo}}" required >
+			<input type="file" name="photo" class="form-control" value="{{$about->photo}}" >
 			<img src="{{$url}}" height="100px" width="100px">
 		<div class="help-block"></div>
 		</div>

@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'Frontend\SiteController@aboutIndex')->name('home');
+
 Route::get('/admin', function(){
 	return view('Admin.index');
 });
