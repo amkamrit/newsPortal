@@ -30,7 +30,7 @@ class GallaryController extends Controller
             $file=$request->file('image');
             $file_name=time().'.'. $file->getClientOriginalExtension();
             $location=('image/' .$file_name);
-            Image::make($file)->resize(1500, 1500)->save($location);
+            Image::make($file)->resize(800, 500)->save($location);
             $gallarys->image=$file_name;
         }
    	
