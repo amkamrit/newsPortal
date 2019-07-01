@@ -1,0 +1,267 @@
+body{
+	width: 100%;
+}
+.toplogo{
+	background-color: #9c5c5c;
+}
+.toplogo h1{
+	align-items: center;
+	color: #0a0303;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	font-family:Denk One;
+	font-size: 42px;
+	font-style: italic;
+	font-weight: bold;
+}
+.toplogo p{
+	color: #0a0303;
+	padding-bottom: 20px;
+	font-family: ' Dhurjati';
+	font-size: 20px;
+}
+.nav{
+	background-color: #391212;
+}
+.nav a{
+	font-size: 15px;
+	font-family: 'Anton';
+
+}
+.headline{
+	margin-top: 15px;
+}
+hr{
+	color: #8a1313;
+	display: block; 
+	height: 3px;
+    border: 0; 
+    border-top: 3px solid #8a1313;
+    margin: 0em 0; padding: 0;
+}
+.moreButton{
+	border-radius: 50%
+}
+.headlineNews{
+	margin-top: 10px;
+}
+.headlineNews h3{
+
+	font-family: 'Anton';
+	font-size: 20px;
+}
+.headlineNews img{
+
+	padding-left: 20px;
+	width: 100%;
+	height: 200px;
+	padding-right: 20px;
+	margin-top: 15px;
+}
+.headlineNews a{
+	text-decoration: none;
+	color: black;
+}
+.headlineNews a:hover{
+	color: #80181c;
+
+}
+.suchanaPrabadi h3{
+	font-family: 'Anton';
+	font-size: 20px;
+}
+.suchanaPrabadi h4{
+	font-family: 'Anton';
+	font-size: 15px;
+}
+.suchanaPrabadi a{
+	text-decoration: none;
+	color: black;
+}
+.suchanaPrabadi p{
+	padding-left: 20px;
+}
+
+.suchanaPrabadi a:hover{
+	color: #80181c;
+
+}
+.suchanaPrabadi img{
+	padding-left: 20px;
+	width: 100%;
+	padding-right: 20px;
+	margin-top: 15px;
+}
+.suchanaPrabadi p{
+	font-family: 'Anton';
+	font-size: 20px;
+	padding-top: 20px;
+}
+.treding{
+	margin-top: 10px;
+}
+.treding a{
+	text-decoration: none;
+	font-size: 15px;
+}
+.add3{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.intreviews{
+	background-color: #e5e3e3;
+}
+.intreviews img {
+
+	margin-top: 20px;
+
+}
+.entertainment img{
+	margin-top: 20px;
+	width: 100%;
+	border-radius: 50%;
+	padding-left: 30px;
+}
+.entertainment{
+	background-color: #f4f0f0;
+}
+.entertainment a{
+	text-decoration: none;
+	font-size: 15px;
+}
+.entertainment a:hover{
+	color: #80181c;
+
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sport img{
+	padding-top: 30px;
+}
+.sport a{
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.sport a:hover{
+	color: #80181c;
+}
+.sportlist img{
+	margin-top: 20px;
+	width: 100%;
+	border-radius: 50%;
+	padding-left: 30px;
+}
+.sportlist a{
+	text-decoration: none;
+	font-size: 15px;
+}
+.sportlist a:hover{
+	color:#80181c;
+}
+.sportlist h3{
+	padding-left: 30px;
+}
+.samachgar img {
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.samachgar a{
+	text-decoration: none;
+	font-size: 15px;
+}
+.samachgar a:hover{
+	color:#80181c;
+}
+.samachgarImage img {
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 200px;
+}
+.samachgarImage a{
+	text-decoration: none;
+	font-size: 15px;
+}
+.samachgarImage a:hover{
+	color:#80181c;
+}
+.spadd img{
+	padding: 30px; 
+	width: 100%;
+}
+.special a{
+	text-decoration: none;
+	font-size: 100px;
+}
+.special a:hover{
+	color:#80181c; 
+}
+.special img{
+	padding: 30px;
+}
+.special h3{
+	font-size: 60px;
+}
+.fotter{
+	background-color: #f4f0f0;
+	padding-top: 30px;
+}
+.fotter h6{
+	font-size: 15px;
+}
+.fotter a{
+	text-decoration: none;
+}
+.fotter a:hover{
+	color:#80181c;
+}
+.fotter h1{
+	font-size: 40px;
+	padding-top: 10px;
+}
+.fotter p{
+	font-size: 15px;
+	padding-top: 15px;
+}
+.copyright{
+	background-color: #c6c2c2;
+}
+.copyright h3{
+	font-size: 15px
+}
+.copyright a{
+	text-decoration: none;
+}
+.copyright a:hover{
+	color: #80181c;
+}
+.singleNews h3{
+
+	font-size: 40px;
+	padding: 20px;
+}
+.singleNews img{
+	padding: 15px;
+}
+.singleNews p{
+	font-size: 20px;
+	padding: 20px;
+}
+.singleNews a{
+	text-decoration: none;
+	color: black;
+}
+.singleNews a:hover{
+	
+	color:#80181c;
+}

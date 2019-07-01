@@ -1,95 +1,56 @@
-<!-- ***** Contact Us Area Start ***** -->
-    <section class="footer-contact-area section_padding_100 clearfix" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- Heading Text  -->
-                    <div class="section-heading">
-                        <h2 style="color: black;">Get in touch with us!</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                    <div class="footer-text">
-                        <p style="color: white;">
-                            Call Us ! I am here for you.
-                        </p>
-                    </div>
-                    <div class="address-text">
-                        <p style="color: white;"><span style="color: green">Address:</span> New Baneshower Kathmandu, Nepal</p>
-                    </div>
-                    <div class="phone-text">
-                        <p style="color: white;"><span style="color: green">Phone:</span> +977-9849437904,+977-9814320878</p>
-                    </div>
-                    <div class="email-text">
-                        <p style="color: white;"><span style="color: green">Email:</span> info@amritkafle.com.np</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <!-- Form Start-->
-                    <div class="contact_from">
-                        <form action="#" method="post">
-                            <!-- Message Input Area Start -->
-                            <div class="contact_input_area">
-                                <div class="row">
-                                    <h2 style="color: black" >Order Now</h2>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
-                                        </div>
-                                    </div>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
-                                        </div>
-                                    </div>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message *" required></textarea>
-                                        </div>
-                                    </div>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-12">
-                                        <button type="submit" class="btn submit-btn">Send Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Message Input Area End -->
-                        </form>
-                    </div>
-                </div>
+<!-- Footer Start -->
+<div class=" row fotter">
+    <div class="col-sm-3">
+        <h1 align="center">खबर आजको </h1>
+        <p align="center">सबै भन्दा पहिले </p>
+    </div>
+    <div class="col-sm-3">
+        <h3>सोसल मिडिया</h3><hr>
+        <a href=""><h6> <i class="fa fa-facebook" style="font-size: 30px;"></i>  Facebook</h6></a>
+        <a href=""><h6> <i class="fa fa-twitter" style="font-size: 30px;"></i>  Twitter</h6></a>
+        <a href=""><h6> <i class="fa fa-linkedin" style="font-size: 30px;"></i>  linkedin</h6></a>
+        <a href=""><h6> <i class="fa fa-instagram" style="font-size: 30px;"></i>  Instagram</h6></a>
+    </div>
+    <div class="col-sm-3">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>प्रधान सम्पादक</h3><br><hr>
+                <a href=""><h6>Amrit Kafle</h6></a>
+            </div>
+            <div class="col-sm-6">
+                <h3>विज्ञापनका लागि</h3><hr>
+                <h6>977-01-5544598, 9801123339, 9851123339 </h6>
             </div>
         </div>
-    </section>
-    <!-- ***** Contact Us Area End ***** -->
+    </div>
+    <div class="col-sm-3">
+        <h3>मेनु</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                @foreach($menu as $menus)
+                <a href=""><h6>{{$menus->name}}</h6></a>
+                @endforeach
 
-    <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-social-icon text-center section_padding_70 clearfix" style="background-color: #6a2828;">
-        <!-- footer logo -->
-        <div class="footer-text">
-            <h2 style="color: black">Amrit kafle</h2>
+            </div>
+            <div class="col-sm-6">
+                <a href=""><h6>विशेष</h6></a>
+                <a href=""><h6>ICC #CT2017</h6></a>
+                <a href=""><h6>सेभेन डेज इन टिबेट</h6></a>
+                <a href=""><h6>Election 2017</h6></a>
+                 <a href=""><h6>विश्वकप २०१८</h6></a>
+            </div>
         </div>
-        <!-- social icon-->
-        <div class="footer-social-icon">
-            <a href="https://www.facebook.com/immyrit.kafle"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/AmritKafle17"><i class="active fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/amrit-kafle-25a705a0/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        </div>
-        <div class="footer-menu">
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- Foooter Text-->
-        <div class="copyright-text">
-            
-            <p>Copyright ©2016 Amrit Kafle. Designed by <a href="https://amritkafle.com.np" target="_blank" style="color: black">Amrit Kafle</a></p>
-        </div>
-    </footer>
-    <!-- ***** Footer Area Start ***** -->
+    </div>
+</div>
+<div class="row copyright">
+    <div class="col-sm-4">
+         
+    </div>
+    <div class="col-sm-4">
+        <h3>© Amrit Kafle  Pvt. Ltd. -2019 All rights reserved.</h3>
+    </div>
+    <div class="col-sm-4">
+        <a href=""><h3 align="right">Develop By Amrti kafle</h3></a>
+    </div>
+</div>
+<!-- Footer End -->

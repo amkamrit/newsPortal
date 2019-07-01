@@ -2,441 +2,275 @@
 
 @section('content')
 
-<!-- ***** Wellcome Area Start ***** -->
-    <section class="wellcome_area clearfix" id="home">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 col-md">
-                    <div class="wellcome-heading">
-                        @foreach($about as $abouts)
-                        <h2>{{$abouts->name}}</h2>
-                        @endforeach
-                        <p>MID-SENIOR Level PHP Developer</p>
-                    </div>
-                    <div class="get-start-area">
-                        <!-- Form Start -->
-                        <form action="#" method="post" class="form-inline">
-                            <input type="email" class="form-control email" placeholder="info@amritkafle.com.np">
-                            <input type="submit" class="submit" value="Get Started">
-                        </form>
-                        <!-- Form End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Welcome thumb -->
-        <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
-
-            <div class="row">
-    <div class="col-lg-12">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-       <li data-target="#myCarousel" data-slide-to="3"></li>
-       <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-       <li data-target="#myCarousel" data-slide-to="6"></li>
-       <li data-target="#myCarousel" data-slide-to="7"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <?php $url=url('image/'.'1560010410.png'); ?>
-        <img src="{{asset('image/1560018604.png')}}" alt="Makalu Himal" style="width:100%;" height="200px;">
-      </div>
-@foreach($gallary as $gallarys)
-      <div class="item">
-    <?php $url=url('image/'.$gallarys->image);  ?>
-        <img src="{{$url}}" style="width:100%;">
-      </div>
-      @endforeach
+<!-- Second Ad Start -->
+    <div class="row secondad">
+        <img src="asset/image/ad1.gif" class="img-responsive center-block">
     </div>
- </div>
-</div>
-</div>
+    <!--Second Ad End -->
 
-    <!-- Slider End Hear -->
-        </div>
-    </section>
-    <!-- ***** Wellcome Area End ***** -->
+    <!--HeadLine Start  -->
 
-    <!-- ***** Special Area Start ***** -->
-    <section class="special-area bg-white section_padding_100" >
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Heading Area -->
-                    <div class="section-heading text-center">
-                        <h2 style="padding-top: 50px;">Why I Am Special</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Special Area -->
-                <div class="col-12 col-md-4" >
-                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s" style="background-color: #5a1515;">
-                        <div class="single-icon" >
-                            <i class="ti-mobile" aria-hidden="true"></i>
-                        </div>
-                        <h4 style="color: black">Easy to use</h4>
-                        <p style="color: white">
-                            User Friendly Website, Good Formattiong, SEO Friendly Website, Fast Loading Website etc.
-                        </p>
-                    </div>
-                </div>
-                <!-- Single Special Area -->
-                <div class="col-12 col-md-4">
-                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s"  style="background-color: #5a1515;">
-                        <div class="single-icon">
-                            <i class="ti-ruler-pencil" aria-hidden="true"></i>
-                        </div>
-                        <h4 style="color: black">Powerful Design</h4>
-                        <p style="color: white">
-                            Mobile Friendly Website, Effective Navigation, Good Internal Linking, Good search feature etc.
-                        </p>
-                    </div>
-                </div>
-                <!-- Single Special Area -->
-                <div class="col-12 col-md-4">
-                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s"  style="background-color: #5a1515;">
-                        <div class="single-icon">
-                            <i class="ti-settings" aria-hidden="true"></i>
-                        </div>
-                        <h4 style="color: black">Customizability</h4>
-                        <p style="color: white">
-                            Higher Customize Website, Easy to Integaration and Easy To Add New Feature etc.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Special Description Area -->
-        <div class="special_description_area mt-150">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6" id="about">
-                        <div class="special_description_img">
-                            <img src="{{asset('asset/img/bg-img/welcome-img.jpg')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
-                        <div class="special_description_content">
-                            <h2>About Us!</h2>
-                            <p>
-                                @foreach($about as $abouts)
-                                {!!$abouts->description!!}
-                                @endforeach
-                            </p>
-                            <div class="app-download-area">
-                                <div class="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
-                                    <!-- Google Store Btn -->
-                                    <a href="#">
-                                        <i class="fa fa-facebok"></i>
-                                        <p class="mb-0"><span>Follow on</span> Facebook</p>
-                                    </a>
-                                </div>
-                                <div class="app-download-btn wow fadeInDown" data-wow-delay="0.4s">
-                                    <!-- Apple Store Btn -->
-                                    <a href="#">
-                                        <i class="fa fa-linketin"></i>
-                                        <p class="mb-0"><span>Follow on</span>Linkedin</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Special Area End ***** -->
-
-    <!-- ***** Awesome Features Start ***** -->
-    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Heading Text -->
-                    <div class="section-heading text-center">
-                        <h2>My Portfolio</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-shopping-cart" aria-hidden="true"></i>
-                        <h5>E-commerse</h5>
-                        @foreach($projectList as $projectLists )
-                        @if($projectLists->category==1)
-                        <p>
-                        <?php
-                        
-                        $url=url('image/'.$projectLists->coverImage);
-
-                        ?>
-                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 200px; height: 200px"><br>
-                            <a href="#contact" class="btn btn-primary" style="margin-left: 30px;">Order Now</a>
-                        
-                    </p>
-                    @endif
-                    @endforeach
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-align-justify" aria-hidden="true"></i>
-                        <h5>News Portal</h5>
-                         @foreach($projectList as $projectLists )
-                        @if($projectLists->category==2)
-                        <p>
-                             <?php
-                        
-                        $url=url('image/'.$projectLists->coverImage);
-
-                        ?>
-                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 200px; height: 200px"><br>
-                        <a href="#contact" class="btn btn-primary" style="margin-left: 30px;">Order Now</a>
-                        
-                        </p>
-                        @endif
-                         @endforeach
-                    </div>
-                </div>
-
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-car" aria-hidden="true"></i>
-                        <h5>Travel and Hotel</h5>
-                        <p>
-                        @foreach($projectList as $projectLists )
-                        @if($projectLists->category==3)
-                        <p>
-                             <?php
-                        
-                        $url=url('image/'.$projectLists->coverImage);
-
-                        ?>
-                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 250px; height: 200px"><br>
-                        <a href="#contact" class="btn btn-primary" style="margin-left: 30px;">Order Now</a>
-                        
-                        </p>
-                        @endif
-                         @endforeach
-                        </p>
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-home" aria-hidden="true"></i>
-                        <h5>Resturant and Cafe</h5>
-                        @foreach($projectList as $projectLists )
-                        @if($projectLists->category==4)
-                        <p>
-                             <?php
-                        
-                        $url=url('image/'.$projectLists->coverImage);
-
-                        ?>
-                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 200px; height: 200px"><br><br>
-                        <a href="#contact" class="btn btn-primary" style="margin-left: 30px;">Order Now</a>
-                        
-                        </p>
-                        @endif
-                         @endforeach
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-up" aria-hidden="true"></i>
-                        <h5>Other Website</h5>
-                        <p>
-                        @foreach($projectList as $projectLists )
-                        @if($projectLists->category==5)
-                        <p>
-                             <?php
-                        
-                        $url=url('image/'.$projectLists->coverImage);
-
-                        ?>
-                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 250px; height: 200px"><br>
-                        <a href="#contact" class="btn btn-primary" style="margin-left: 30px;">Order Now</a>
-                        
-                        </p>
-                        @endif
-                         @endforeach
-                        </p>
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-headphone" aria-hidden="true"></i>
-                        <h5>24/7 Online Support</h5>
-                        <p>
-                        @foreach($projectList as $projectLists )
-                        @if($projectLists->category==6)
-                        <p>
-                             <?php
-                        
-                        $url=url('image/'.$projectLists->coverImage);
-
-                        ?>
-                        <img src="{{$url}}" alt="IMG-PRODUCT" style="width: 250px; height: 200px">
-                        
-                        </p>
-                        @endif
-                         @endforeach
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div class="row headline">
+        <div class="col-sm-6">
+            <button class="btn btn-danger btn-lg">हेडलाइन</button>
 
         </div>
-    </section>
-    <!-- ***** Awesome Features End ***** -->
-
-    <!-- ***** Video Area Start ***** -->
-    <div class="video-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Video Area Start -->
-                    <div class="video-area" style="background-image: url(asset/img/bg-img/video.png);">
-                        <div class="video-play-btn">
-                            <a href="https://www.youtube.com/watch?v=f5BBJ4ySgpo" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-6" align="right">
+            <a href="" class="btn btn-primary btn-md moreButton">सबै </a>
         </div>
     </div>
-    <!-- ***** Video Area End ***** -->
-
+    <hr>
+    <div class="row headlineNews">
+        @foreach($headline as $headlines)
+        <div class="col-sm-3">
+            <div class="row">
+            <?php $url=url('image/'.$headlines->image); ?>
+                <img src="{{$url}}" width="100%">
+            </div>
+            <div class="row">
+                <a href="{{url('singlePage')}}"><h3 align="center">{{$headlines->name}} </h3></a>
+            </div>
+        </div>
+        @endforeach
+    </div>
+    <!--HeadLine End  -->
+<div class="row add3">
+    <img src="asset/image/ad3.gif" class="img-responsive center-block">
+</div>
+<!-- News Start -->
     
+    <div class="row headline">
+        <div class="col-sm-6">
+            <button class="btn btn-danger btn-lg">समाचार</button>
 
-    <!-- ***** Client Feedback Area Start ***** -->
-    <section class="clients-feedback-area bg-white section_padding_100 clearfix" id="testimonials">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
-                    <div class="slider slider-for">
-                        <!-- Client Feedback Text  -->
-                        <div class="client-feedback-text text-center">
-                            <div class="client">
-                                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            </div>
-                            <div class="client-description text-center">
-                                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting. ”</p>
-                            </div>
-                            <div class="star-icon text-center">
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                            </div>
-                            <div class="client-name text-center">
-                                <h5>Aigars Silkalns</h5>
-                                <p>Ceo Colorlib</p>
-                            </div>
-                        </div>
-                        <!-- Client Feedback Text  -->
-                        <div class="client-feedback-text text-center">
-                            <div class="client">
-                                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            </div>
-                            <div class="client-description text-center">
-                                <p>“ I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting. ”</p>
-                            </div>
-                            <div class="star-icon text-center">
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                            </div>
-                            <div class="client-name text-center">
-                                <h5>Jennifer</h5>
-                                <p>Developer</p>
-                            </div>
-                        </div>
-                        <!-- Client Feedback Text  -->
-                        <div class="client-feedback-text text-center">
-                            <div class="client">
-                                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            </div>
-                            <div class="client-description text-center">
-                                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job.”</p>
-                            </div>
-                            <div class="star-icon text-center">
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                            </div>
-                            <div class="client-name text-center">
-                                <h5>Helen</h5>
-                                <p>Marketer</p>
-                            </div>
-                        </div>
-                        <!-- Client Feedback Text  -->
-                        <div class="client-feedback-text text-center">
-                            <div class="client">
-                                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            </div>
-                            <div class="client-description text-center">
-                                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting. ”</p>
-                            </div>
-                            <div class="star-icon text-center">
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                            </div>
-                            <div class="client-name text-center">
-                                <h5>Henry smith</h5>
-                                <p>Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Client Thumbnail Area -->
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="slider slider-nav">
-                        <div class="client-thumbnail">
-                            <img src="{{asset('asset/img/bg-img/client-3.jpg')}}" alt="">
-                        </div>
-                        <div class="client-thumbnail">
-                            <img src="{{asset('asset/img/bg-img/client-2.jpg')}}" alt="">
-                        </div>
-                        <div class="client-thumbnail">
-                            <img src="{{asset('asset/img/bg-img/client-1.jpg')}}" alt="">
-                        </div>
-                        <div class="client-thumbnail">
-                            <img src="{{asset('asset/img/bg-img/client-2.jpg')}}" alt="">
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="col-sm-6" align="right">
+            <button class="btn btn-primary btn-md moreButton">सबै </button>
+        </div>
+    </div>
+    <hr>
+    <div class="row samachgar">
+        @foreach($newsOnes as $newsOne)
+        <div class="col-sm-6">
+             <?php $url=url('image/'.$newsOne->image); ?>
+            <img src="{{$url}}" width="100%">
+        </div>
+        <div class="col-sm-6">
+            <a href=""><h3>{{$newsOne->name}}</h3></a>
+            <p>{!!$newsOne->description!!} </p>
+        </div>
+    </div>
+    @endforeach
+    <div class="row spadd">
+        <div class="col-sm-6">
+            <img src="asset/image/ad10.jpeg">
+        </div>
+        <div class="col-sm-6">
+            <img src="asset/image/ad11.jpg">
+        </div>
+    </div>
+    <div class="row samachgarImage">
+          @foreach($newss as $news)
+        <div class="col-sm-3">
+            <div class="row">
+                 <?php $url=url('image/'.$news->image); ?>
+                <img src="{{$url}}" width="100%">
+            </div>
+            <div class="row">
+                <a href=""><h3 align="center">{{$news->name}}</h3></a>
             </div>
         </div>
-    </section>
-    <!-- ***** Client Feedback Area End ***** -->
+        @endforeach
+    </div>
+<!-- News End -->
+    
+    <div class="row add3">
+    <img src="asset/image/ad3.gif" class="img-responsive center-block">
+</div>
+        <!--Suchana Prabadhi Start  -->
+
+    <div class="row headline">
+        <div class="col-sm-6">
+            <button class="btn btn-danger btn-lg">सूचना प्रविधि</button>
+
+        </div>
+        <div class="col-sm-6" align="right">
+            <button class="btn btn-primary btn-md moreButton">सबै </button>
+        </div>
+    </div>
+    <hr>
+    <div class="row suchanaPrabadi">
+        <div class="col-sm-4">
+            @foreach($tecnologyOne as $tecnologyOnes)
+            <div class="row">
+                <?php $url=url('image/'.$tecnologyOnes->image); ?>
+                <img src="{{$url}}" width="100%">
+            </div>
+            <div class="row">
+                <a href=""><h3 align="center">{{$tecnologyOnes->name}}</h3></a>
+            </div>
+            <div class="row">
+                <p align="center">{!!str_limit($tecnologyOnes ->description, $limit = 300, $end = '...')!!}<br> <button class="btn btn-primary btn-md">More</button></p>
+            </div>
+            @endforeach
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                @foreach($tecnology as $tecnologys)
+                <div class="col-sm-6">
+                    <div class="row">
+                        <?php $url=url('image/'.$tecnologys->image); ?>
+                        <img src="{{$url}}" width="100%" height="220px">
+                    </div>
+                    <div class="row">
+                        <a href=""><h4 align="center">{{$tecnologys->name}}</h4></a>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+                <div class="col-sm-2 treding" >
+                        <h2>समाचारहरु</h2>
+                        <table class="table table-striped">
+                                    <tbody>
+                                        @foreach($newsList as $newsLists)
+                                      <tr>
+                                        <td><a href="">{{$newsLists->name}}</a></td>
+                                      </tr>
+                                      @endforeach
+
+                                    </tbody>
+                                  </table>
+                </div>
+        </div>
+
+    <!--Suchana Prabadhi End  -->
+
+        <div class="row add3">
+            <img src="asset/image/ad4.gif" class="img-responsive center-block" >
+        </div>
+    <!-- Intreview Start -->
+
+    <div class="row headline">
+        <div class="col-sm-6">
+            <button class="btn btn-danger btn-lg">अन्तर्वार्ता </button>
+
+        </div>
+        <div class="col-sm-6" align="right">
+            <button class="btn btn-primary btn-md moreButton">सबै </button>
+        </div>
+    </div>
+    <hr>
+          @foreach($intreview as $intreviews)
+    <div class="row intreviews">
+         <?php $url=url('image/'.$intreviews->image); ?>
+        <img src="asset/image/intreview.jpg" class="img-responsive center-block" >
+    </div>
+    @endforeach
+    <!-- Intreview End -->
+            <div class="row add3">
+            <img src="asset/image/ad5.gif" class="img-responsive center-block" >
+        </div>
+    <!-- Entertainment Start -->
+
+    <div class="row headline">
+
+        <div class="col-sm-6">
+            <button class="btn btn-danger btn-lg">मनोरञ्जन </button>
+
+        </div>
+        <div class="col-sm-6" align="right">
+            <button class="btn btn-primary btn-md moreButton">सबै </button>
+        </div>
+    </div>
+    <hr>
+    <div class="row entertainment">
+        @foreach($entertimentOnce as $entertimentOnces)
+        <div class="col-sm-6">
+             <?php $url=url('image/'.$entertimentOnces->image); ?>
+            <img src="{{$url}}" class="img-responsive center-block" style="height: 600px;">
+            <div class="text-block">
+                <h3>{{$entertimentOnces->name}} </h3>
+                
+            </div>
+        </div>
+        @endforeach
+        <div class="col-sm-6">
+            <div class="row">
+                @foreach($entertiment as $entertiments)
+                <div class="col-sm-6">
+                    <div class="row">
+                        <?php $url=url('image/'.$entertiments->image); ?>
+                        <img src="{{$url}}" class="rounded-circle">
+                    </div>
+                    <div class="row">
+                        <a href=""><h3 align="center">{{$entertiments->name}}</h3></a>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+    <!-- Entertainment End -->
+<div class="row add3">
+    <img src="asset/image/ad6.gif" class=" img-responsive center-block">
+</div>
+<!-- Sports Start -->
+    
+    <div class="row headline">
+        <div class="col-sm-6">
+            <button class="btn btn-danger btn-lg">खेल </button>
+
+        </div>
+        <div class="col-sm-6" align="right">
+            <button class="btn btn-primary btn-md moreButton">सबै </button>
+        </div>
+    </div>
+    <hr>
+    <div class="row sport">
+        <div class="col-sm-6">
+            @foreach($sportOnce as $sportOnces)
+            <?php $url=url('image/'.$sportOnces->image); ?>
+            <img src="{{$url}}" width="100%" >
+        </div>
+        <div class="col-sm-3">
+            <a href=""><h3>{{$sportOnces->name}}</h3></a>
+            <p>{!!str_limit($sportOnces ->description, $limit = 800, $end = '...')!!}</p>
+        </div>
+        @endforeach
+        <div class="col-sm-3 smadd">
+            <img src="asset/image/smadd1.gif" width="100%"><br>
+            <img src="asset/image/smadd2.gif" width="100%">
+        </div>
+    </div>
+    <div class="row sportlist">
+         @foreach($sport as $sports)
+        <div class="col-sm-3">
+            <div class="row ">
+                 <?php $url=url('image/'.$sports->image); ?>
+                <img src="{{$url}}" class="rounded-circle" width="100%">
+            </div>
+            <div class="row">
+                <a href=""><h3 align="center">{{$sports->name}}</h3></a>
+            </div>
+        </div>
+        @endforeach
+
+    </div>
+<!-- Sports End -->
+<hr>
+<!-- Special News start -->
+@foreach($randomNew as $randomNews)
+    <div class="row special">
+        <a href=""><h3 align="center"> {{$randomNews->name}}</h3></a>
+    </div>
+    <div class="row special">
+        <?php $url=url('image/'.$randomNews->image); ?>
+        <img src="{{$url}}" width="100%">
+    </div>
+    <hr>
+    @endforeach
+<!-- Special News End -->
 
 
 @endsection

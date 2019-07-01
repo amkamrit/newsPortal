@@ -12,17 +12,29 @@
 */
 
 Route::get('/', 'Frontend\SiteController@aboutIndex')->name('home');
-
-Route::get('/admin', function(){
-	return view('Admin.index');
-});
 //Admin Route Hear
 
-Route::resource('Admin/About','Admin\AboutController');
-Route::resource('Admin/ProjectList','Admin\ProjectListController');
-Route::resource('Admin/Services','Admin\ServicesController');
-Route::resource('Admin/SocialMedia','Admin\ScialMediaController');
-Route::resource('Admin/Contact','Admin\ContactController');
-Route::resource('Admin/Gallary','Admin\GallaryController');
-Route::resource('Admin/MyCline','Admin\ContactUserController');
- 
+Route::resource('Admin/About','Admin\AboutController')->middleware('auth');
+Route::resource('Admin/SocialMedia','Admin\ScialMediaController')->middleware('auth');
+Route::resource('Admin/Contact','Admin\ContactController')->middleware('auth');
+Route::resource('Admin/Gallary','Admin\GallaryController')->middleware('auth');
+Route::resource('Admin/MyCline','Admin\ContactUserController')->middleware('auth');
+Route::resource('Admin/menu','Admin\MenuController')->middleware('auth');
+Route::resource('Admin/subMenu', 'Admin\SubMenuController')->middleware('auth');
+Route::resource('Admin/post', 'Admin\PostController')->middleware('auth');
+Route::get('Admin/indexNews', 'Admin\PostController@indexNews')->middleware('auth');
+Route::get('Admin/add/{id}', 'Admin\PostController@add')->middleware('auth');
+Route::post('Admin/indexing/{id}', 'Admin\PostController@indexingUpload')->middleware('auth');
+Route::post('Admin/indexingRemove/{id}', 'Admin\PostController@indexingRemove')->middleware('auth');
+Auth::routes();
+
+Route::get('/admin', 'HomeController@index')->name('admin');
+Route::get('/logout', 'HomeController@logout')->name('logout');
+
+
+
+
+// Frontend Route
+
+Route::get('singlePage','Frontend\SiteController@singlePage');
+Route::get('categoryPage','Frontend\SiteController@categoryPage');

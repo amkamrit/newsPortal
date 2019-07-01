@@ -1,25 +1,34 @@
 
 			<div class="noticeboard">
-				<table class="table" border="0px;">
+				<table class="table" border="1px;">
 					<tbody class="tableStyle">
 						<tr style="background-color: #25b999;">
-							<td> Dashboard</td>
+							<td><a href="{{url('/admin')}}"> Dashboard</a></td>
 
 						</tr>
 						<tr>
 							<td><a href="{{url('Admin/About')}}"> About</a></td>
 
 						</tr>
-						<tr>
-							<td><a href="{{url('Admin/ProjectList')}}"> Project List</a></td>
 
-						</tr>
-						<tr>
-							<td><a href="{{url('Admin/Services')}}"> My Services</a></td>
-
-						</tr>
 						<tr>
 							<td><a href="{{url('Admin/SocialMedia')}}"> Social Media</a></td>
+
+						</tr>
+						<tr>
+							<td><a href="{{url('Admin/menu')}}">मेनु </a></td>
+
+						</tr>
+						<tr>
+							<td><a href="{{url('Admin/subMenu')}}"> सबमेनु</a></td>
+
+						</tr>
+						<tr>
+							<td><a href="{{url('Admin/post')}}"> समाचार </a></td>
+
+						</tr>
+						<tr>
+							<td><a href="{{url('Admin/indexNews')}}"> होमपेज समाचार </a></td>
 
 						</tr>
 						<tr>
@@ -27,7 +36,7 @@
 
 						</tr>
 						<tr>
-							<td><a href="{{url('Admin/Gallary')}}"> Gallary</a></td>
+							<td><a href="{{url('Admin/Gallary')}}"> विज्ञापन Image</a></td>
 
 						</tr>
 						<tr>
